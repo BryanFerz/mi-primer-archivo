@@ -51,7 +51,6 @@ img {
 
 }   
 
-/* Navbar adjustments for mobile */
 .navbar-toggler {
     border-color: #ddd;
   }
@@ -81,9 +80,8 @@ img {
 }
 .zapas {
     display: flex;
-    height: 500px;
-    margin: 20px;
-    padding: 10px;  
+    height: 30%;
+    padding: 40px;  
 }
 
 .precio {
@@ -182,13 +180,15 @@ footer {
     }
   
     .zapas img {
-      width: 100%;
+      width: 45%;
       max-width: 100%;
-      height: auto;
+      height: 300px;
+      align-items: end;
     }
   
     .zapas-contenedor {
       font-size: 18px;
+      margin: 20px;
     }
   
     .precio {
