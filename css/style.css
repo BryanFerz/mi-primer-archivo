@@ -1,0 +1,129 @@
+
+
+.container.fluid { 
+    background-color: white
+    
+}
+
+.bt-texto { 
+    color: white;
+}
+
+.bt-bottom {
+    background-color: white;
+    padding: 10px;
+}
+
+/** Tamaño de carrusel **/
+.c-item {
+    height: 450px;
+}
+
+/** Tamaño de Imagen de carrusel **/
+.c-img {
+    height: 600px;
+}
+
+main  {
+    background-image: url(../img/zapatillas-fondo.jpg);
+    color: white;
+    }
+    
+/** Zapatillas **/
+h2 {
+    margin: 20px;
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sneakers {
+    display: flex; gap: 10px;
+    justify-content: center;
+
+img {
+    width: 200px;
+    margin: 30px;
+    
+
+}   
+    
+}
+.zapas {
+    display: flex;
+    height: 500px;
+    margin: 20px;
+    padding: 10px;  
+}
+
+.precio {
+    margin-left: 50px;
+}
+
+.zapas-contenedor {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-pills {
+    margin: 50px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse; 
+    cursor: pointer;
+}
+
+.star {
+    font-size: 30px;
+    color: lightgray;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: gold; 
+}
+
+.selector-talle {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+select:focus {
+    border-color: gold;
+    outline: none;
+}
+
+input {
+    height: 50px;
+    width: 100px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(45, 61, 49);
+    color: white;
+    align-items: end;
+}
+
+
+
