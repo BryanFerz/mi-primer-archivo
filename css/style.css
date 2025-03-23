@@ -21,7 +21,7 @@
 
 /** Tamaño de Imagen de carrusel **/
 .c-img {
-    height: 600px;
+    height: 100%;
 }
 
 main  {
@@ -32,20 +32,51 @@ main  {
 /** Zapatillas **/
 h2 {
     margin: 20px;
-    padding-top: 20px;
+    padding-top: 20px;  
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .sneakers {
-    display: flex; gap: 10px;
+    display: flex; gap: 5px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
 img {
     width: 200px;
     margin: 30px;
     
+    
 
 }   
+
+/* Navbar adjustments for mobile */
+.navbar-toggler {
+    border-color: #ddd;
+  }
+  
+  .navbar-collapse {
+    flex-grow: 1;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+  }
+  
+  .navbar-nav .nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .navbar-nav .nav-item a {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-item a:hover {
+    color: #0056b3;
+  }
     
 }
 .zapas {
@@ -57,12 +88,16 @@ img {
 
 .precio {
     margin-left: 50px;
+    font-size: 20px;
 }
 
 .zapas-contenedor {
     margin: 40px;
     display: flex;
     flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 .nav-pills {
@@ -71,7 +106,7 @@ img {
 
 .rating {
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse; /* Para que se seleccionen de derecha a izquierda */
     cursor: pointer;
 }
 
@@ -83,7 +118,7 @@ img {
 
 .star:hover,
 .star:hover ~ .star {
-    color: gold; 
+    color: gold; /* Cambia el color al pasar por encima */
 }
 
 .selector-talle {
@@ -125,5 +160,86 @@ footer {
     align-items: end;
 }
 
-
-
+/* Media query for small devices (max-width 600px) */
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .navbar-collapse {
+      text-align: center;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .navbar-nav .nav-item {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .zapas img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .zapas-contenedor {
+      font-size: 18px;
+    }
+  
+    .precio {
+      font-size: 16px;
+    }
+  
+    .rating {
+      font-size: 16px;
+    }
+  
+    .selector-talle select {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .selector-talle input {
+      width: 100%;
+    }
+  
+    .sneakers {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer {
+      text-align: center;
+      padding: 15px 0;
+    }
+  
+    .sneakers a img {
+      width: 80%;
+      max-width: 200px;
+    }
+  }
+  
+/* Media query for medium devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .sneakers {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .sneakers a img {
+      width: 100%;
+      max-width: 100px;
+    }
+  }
+  
+  /* Full screen (larger than 768px) */
+  @media only screen and (min-width: 769px) {
+    .zapas img {
+      max-width: 500px;
+    }
+  }
