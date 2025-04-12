@@ -1,22 +1,46 @@
+
+ 
+ 
+.container.fluid { 
+    background-color: white
+    
+}
+
+.bt-texto { 
+    color: white;
+}
+
+.bt-bottom {
+    background-color: white;
+    padding: 10px;
+}
+
 /** Tamaño de carrusel **/
+
 .c-item {
-    height: 100vh;
+    height: 450px;
+    height: 100%;
 }
 
 /** Tamaño de Imagen de carrusel **/
+
 .c-img {
     height: 100%;
 }
 
 /** fondo del main **/
+
 main  {
     background-image: url(../img/zapatillas-fondo.jpg);
     color: white;
-    }
-    
+}
+
+
 /** Zapatillas **/
+
 h2 {
-    margin: 20px;
+    margin: 20x;
+    padding-top: 20px;  
     padding-top: 20px;
     padding-left: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,6 +49,8 @@ h2 {
 /** imagen de la zapatilla + precio **/
 .sneakers {
     display: flex;
+    justify-content: center;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -32,44 +58,69 @@ img {
     width: 200px;
     margin: 30px;
 }   
-    
+
+.navbar-toggler {
+    border-color: #ddd;
+  }
+  
+  .navbar-collapse {
+    flex-grow: 1;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+  }
+  
+  .navbar-nav .nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .navbar-nav .nav-item a {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-item a:hover {
+    color: #0056b3;
+  }
+
 }
 .zapas {
     display: flex;
     height: 30%;
+    padding: 40px;  
     padding: 10px;
 }
 
 .precio {
-    margin-left: 50px;
-    font-size: 20px;
-}
-
 .zapas-contenedor {
     margin: 40px;
     padding: 20px;
     display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 .nav-pills {
+    margin: 50px;
     margin: 30px;
 }
 
 /** estrellas de puntuacion **/
 .rating {
     display: flex;
+    flex-direction: row-reverse; /* Para que se seleccionen de derecha a izquierda */
     flex-direction: row-reverse; 
     cursor: pointer;
 }
 
-.star {
-    font-size: 30px;
-    color: lightgray;
-    transition: color 0.2s;
-}
 
 .star:hover,
 .star:hover ~ .star {
+    color: gold; /* Cambia el color al pasar por encima */
     color: gold;
 }
 
@@ -77,31 +128,6 @@ img {
 .selector-talle {
     margin-left: 50px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-label {
-    font-size: 1.1rem;
-    color: #333;
-}
-
-select {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: border-color 0.2s;
-}
-
-select:focus {
-    border-color: gold;
-    outline: none;
-}
-
-input {
-    height: 50px;
     width: 100px;
 }
 
@@ -109,94 +135,54 @@ input {
 footer {
     padding: 10px;
     text-align: center;
-    background-color: rgb(45, 61, 49);
-    color: white;
     align-items: end;
 }
 
+/* Media query for small devices (max-width 600px) */
 /* Mediaquery (max-width 600px) */
 @media only screen and (max-width: 600px) {
     body {
       font-size: 14px;
     }
-  
-    .navbar-collapse {
-      text-align: center;
-    }
-  
-    .navbar-nav {
-      flex-direction: column;
-      margin-top: 10px;
-    }
-  
-    .navbar-nav .nav-item {
-      padding-left: 0;
-      padding-right: 0;
-      margin-bottom: 10px;
-    }
-  
+
     .zapas img {
+      width: 45%;
       width: 50%;
       max-width: 100%;
+      height: 300px;
       height: 250px;
       margin-top: 90px;
       align-items: end;
     }
-  
-    .zapas-contenedor {
-      font-size: 18px;
-      margin: 20px;
-    }
-  
-    .precio {
-      font-size: 16px;
-    }
-  
-    .rating {
-      font-size: 16px;
-    }
-  
-    .selector-talle select {
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .selector-talle input {
-      width: 100%;
-    }
-  
-    .sneakers {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    footer {
-      text-align: center;
-      padding: 15px 0;
-    }
-  
-    .sneakers a img {
-      width: 80%;
-      max-width: 200px;
     }
   }
-  
+
+/* Media query for medium devices (max-width: 768px) */
 /* Mediaquery (max-width: 768px) */
 @media only screen and (max-width: 768px) {
     .sneakers {
       flex-direction: row;
-      justify-content: space-between;
+      img { 
+        width: 100px;
+        margin: 30px;
+      }
+      
+      .zapas {
+        width: 50%;
+        height: 50%;
+      }
     }
-  
-    .sneakers a img {
-      width: 100%;
-      max-width: 100px;
-    }
-  }
-  
+}
+
+
+  /* Full screen (larger than 768px) */
   /* pantalla completa (larger than 768px) */
   @media only screen and (min-width: 769px) {
     .zapas img {
       max-width: 500px;
     }
-  }
+    .zapas {
+        width: 50px;
+        height: 50px;
+      }
+    }
