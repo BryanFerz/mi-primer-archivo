@@ -50,13 +50,13 @@ h2 {
 .sneakers {
     display: flex;
     justify-content: center;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+
 
 img {
     width: 200px;
     margin: 30px;
+
 }   
 
 .navbar-toggler {
@@ -88,12 +88,11 @@ img {
 }
 .zapas {
     display: flex;
-    height: 30%;
+    height: 500px;
     padding: 40px;  
-    padding: 10px;
 }
 
-.precio {
+
 .zapas-contenedor {
     margin: 40px;
     padding: 20px;
@@ -146,43 +145,36 @@ footer {
     }
 
     .zapas img {
-      width: 45%;
-      width: 50%;
-      max-width: 100%;
-      height: 300px;
-      height: 250px;
-      margin-top: 90px;
+      width: 280px;
+      height: 230px;
+      margin-top: 60px;
       align-items: end;
     }
-    }
-  }
+    .sneakers {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    
+    img {
+        width: 150px;
+        margin: 10px;
+    }   
+}
 
 /* Media query for medium devices (max-width: 768px) */
 /* Mediaquery (max-width: 768px) */
 @media only screen and (max-width: 768px) {
     .sneakers {
       flex-direction: row;
-      img { 
-        width: 100px;
-        margin: 30px;
-      }
-      
-      .zapas {
-        width: 50%;
-        height: 50%;
-      }
-    }
-}
 
+      
+    }
+  }
 
   /* Full screen (larger than 768px) */
   /* pantalla completa (larger than 768px) */
   @media only screen and (min-width: 769px) {
     .zapas img {
       max-width: 500px;
-    }
-    .zapas {
-        width: 50px;
-        height: 50px;
-      }
     }
