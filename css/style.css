@@ -1,192 +1,67 @@
-
- 
- 
-.container.fluid { 
-    background-color: white
-    
+/* comentario en sass y css */
+body {
+  /* imagen de fondo */
+  background-image: url(../img/zapatillas-fondo.jpg);
+  /* titulos de las zapatillas */
+  /* zapatillas pag principal */
+  /* pag de zapatillas */
+}
+body hr {
+  color: white;
+  height: 5px;
+}
+body h2 {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+body .sneakers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .sneakers img {
+  width: 200px;
+  margin: 30px;
+}
+body .zapas {
+  display: flex;
+  height: 500px;
+  padding: 40px;
+}
+body .zapas .zapas-contenedor {
+  margin: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: bold;
+}
+body .zapas .precio {
+  margin: 40px;
+  color: white;
+}
+body .zapas .nav-pills {
+  padding-left: 40px;
+  margin-top: 20px;
+}
+body .zapas .rating {
+  display: flex;
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+body .zapas .rating .star:hover ~ .star {
+  color: gold;
 }
 
-.bt-texto { 
-    color: white;
-}
-
-.bt-bottom {
-    background-color: white;
-    padding: 10px;
-}
-
-/** Tamaño de carrusel **/
-
-.c-item {
-    height: 450px;
-    height: 100%;
-}
-
-/** Tamaño de Imagen de carrusel **/
-
-.c-img {
-    height: 100%;
-}
-
-/** fondo del main **/
-
-main  {
-    background-image: url(../img/zapatillas-fondo.jpg);
-    color: white;
-}
-
-
-/** Zapatillas **/
-
-h2 {
-    margin: 20x;
-    padding-top: 20px;  
-    padding-top: 20px;
-    padding-left: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-/** imagen de la zapatilla + precio **/
-.sneakers {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-
-img {
-    width: 200px;
-    margin: 30px;
-
-}   
-
-.navbar-toggler {
-    border-color: #ddd;
-  }
-  
-  .navbar-collapse {
-    flex-grow: 1;
-  }
-  
-  .navbar-nav {
-    flex-direction: row;
-  }
-  
-  .navbar-nav .nav-item {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  .navbar-nav .nav-item a {
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .navbar-nav .nav-item a:hover {
-    color: #0056b3;
-  }
-
-}
-.zapas {
-    display: flex;
-    height: 500px;
-    padding: 40px;  
-}
-
-
-.zapas-contenedor {
-    margin: 40px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.comprar { 
-    max-width: 100%;
-    width: auto;
-    overflow: hidden;
-}
-
-.nav-pills {
-    margin: 50px;
-    margin: 30px;
-}
-
-/** estrellas de puntuacion **/
-.rating {
-    display: flex;
-    flex-direction: row-reverse; /* Para que se seleccionen de derecha a izquierda */
-    flex-direction: row-reverse; 
-    cursor: pointer;
-}
-
-
-.star:hover,
-.star:hover ~ .star {
-    color: gold; /* Cambia el color al pasar por encima */
-    color: gold;
-}
-
-/** seleccionador de talle **/
-.selector-talle {
-    margin-left: 50px;
-    display: flex;
-    width: 100px;
-}
-
-/** pie de la pagina **/
 footer {
-    padding: 10px;
-    text-align: center;
-    align-items: end;
+  padding: 10px;
+  text-align: center;
+  align-items: end;
+  color: white;
+}
+footer hr {
+  color: white;
 }
 
-/* Media query for small devices (max-width 600px) */
-/* Mediaquery (max-width 600px) */
-@media only screen and (max-width: 600px) {
-    body {
-      font-size: 14px;
-    }
-
-    .zapas img {
-      width: 280px;
-      height: 230px;
-      margin-top: 60px;
-      align-items: end;
-    }
-    .sneakers {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    
-    
-    img {
-        width: 150px;
-        margin: 10px;
-    }   
- 
-}
-
-/* Media query for medium devices (max-width: 768px) */
-/* Mediaquery (max-width: 768px) */
-@media only screen and (max-width: 768px) {
-    .sneakers {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    
-    
-    img {
-        width: 150px;
-        margin: 10px;
-    }   
-    
-  }
-
-  /* Full screen (larger than 768px) */
-  /* pantalla completa (larger than 768px) */
-  @media only screen and (min-width: 769px) {
-    .zapas img {
-      max-width: 500px;
-    }
+/*# sourceMappingURL=style.css.map */
