@@ -100,7 +100,12 @@ img {
     flex-direction: column;
     font-size: 24px;
     font-weight: bold;
-    margin: 10px 0;
+}
+
+.comprar { 
+    max-width: 100%;
+    width: auto;
+    overflow: hidden;
 }
 
 .nav-pills {
@@ -160,6 +165,7 @@ footer {
         width: 150px;
         margin: 10px;
     }   
+ 
 }
 
 /* Media query for medium devices (max-width: 768px) */
@@ -175,6 +181,7 @@ footer {
         width: 150px;
         margin: 10px;
     }   
+    
   }
 
   /* Full screen (larger than 768px) */
