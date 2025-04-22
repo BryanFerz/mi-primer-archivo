@@ -58,6 +58,9 @@ body {
                 color: gold 
             }
         }
+        .comprar { 
+            margin: 10px;
+        }
     }
 
 }
@@ -72,3 +75,21 @@ footer {
     color: white;
 }
 
+
+/* mediaquare 600px */
+@media (min-width: 600px){
+    .zapas { 
+        flex-direction: column;
+    }
+    
+
+}
+
+    
+
+
+
+@media (max-width: 768px){
+
+
+}

@@ -53,6 +53,9 @@ body .zapas .rating {
 body .zapas .rating .star:hover ~ .star {
   color: gold;
 }
+body .zapas .comprar {
+  margin: 10px;
+}
 
 footer {
   padding: 10px;
@@ -62,6 +65,13 @@ footer {
 }
 footer hr {
   color: white;
+}
+
+/* mediaquare 600px */
+@media (min-width: 600px) {
+  .zapas {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
