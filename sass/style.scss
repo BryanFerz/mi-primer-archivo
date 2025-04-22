@@ -78,10 +78,7 @@ footer {
 
 /* mediaquare 600px */
 @media (min-width: 600px){
-    .zapas { 
-        flex-direction: column;
-    }
-    
+
 
 }
 
@@ -90,6 +87,8 @@ footer {
 
 
 @media (max-width: 768px){
-
+    .zapas { 
+        flex-direction: column;
+    }
 
 }

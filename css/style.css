@@ -68,7 +68,7 @@ footer hr {
 }
 
 /* mediaquare 600px */
-@media (min-width: 600px) {
+@media (max-width: 768px) {
   .zapas {
     flex-direction: column;
   }
